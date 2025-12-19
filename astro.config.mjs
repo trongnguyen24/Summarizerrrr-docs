@@ -45,37 +45,7 @@ export default defineConfig({
             },
           ],
         },
-        {
-          label: 'Guides',
-          items: [
-            { label: 'Guides Overview', link: '/guides/guidance' },
-            { label: 'Quick Start Guide', link: '/guides/quick-start' },
-            {
-              label: 'Complete User Guide',
-              link: '/guides/complete-guide',
-            },
-            {
-              label: 'Customization Settings',
-              link: '/guides/customization',
-            },
-            {
-              label: 'Video Summarization',
-              link: '/guides/video-summarization',
-            },
-            {
-              label: 'Advanced Features',
-              link: '/guides/advanced-features',
-            },
-            {
-              label: 'Troubleshooting Guide',
-              link: '/guides/troubleshooting',
-            },
-          ],
-        },
-        {
-          label: 'Reference',
-          autogenerate: { directory: 'reference' },
-        },
+
         {
           label: 'Privacy Policy',
           autogenerate: { directory: 'privacy-policy' },
