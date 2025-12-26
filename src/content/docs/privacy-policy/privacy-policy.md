@@ -52,6 +52,7 @@ The Extension requests the following permissions:
 | `sidePanel` | To display the summarization interface |
 | `contextMenus` | To add right-click menu options |
 | `host_permissions` | To communicate with AI provider APIs |
+| `identity` | Used for Google account authentication for the optional Cloud Sync feature |
 
 ## No Tracking or Analytics
 
@@ -61,6 +62,29 @@ The Extension does **not**:
 - Use cookies for tracking
 - Share data with advertisers
 - Require account registration
+
+## Google Drive Integration
+The Extension offers an optional Cloud Sync feature that uses Google Drive to sync your data across devices.
+### Data Accessed
+When you enable Cloud Sync and sign in with your Google account, the Extension:
+- Creates and manages files only within its own application folder on your Google Drive
+- Does NOT access any other files on your Google Drive
+- Uses the `drive.appdata` scope (limited to app-specific data only)
+### Data Synced to Google Drive
+If you enable Cloud Sync, the following data may be stored in your Google Drive app folder:
+- Settings and preferences
+- Summarization history
+- Archive and tags
+- Custom prompts
+### How We Use Your Google Data
+- We only access Google Drive to store and retrieve your extension data
+- We do NOT share your Google data with any third parties
+- We do NOT use your Google data for advertising
+- We do NOT sell your Google data
+### Revoking Access
+You can disconnect your Google account at any time from the Extension settings. 
+You can also revoke access via your Google Account permissions page:
+https://myaccount.google.com/permissions
 
 ## Data Security
 
