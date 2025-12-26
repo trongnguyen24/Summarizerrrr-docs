@@ -47,8 +47,11 @@ export default defineConfig({
         },
 
         {
-          label: 'Privacy Policy',
-          autogenerate: { directory: 'privacy-policy' },
+          label: 'Legal',
+          items: [
+            { label: 'Privacy Policy', link: '/privacy-policy/privacy-policy' },
+            { label: 'Terms of Service', link: '/terms-of-service/terms-of-service' },
+          ],
         },
       ],
     }),
